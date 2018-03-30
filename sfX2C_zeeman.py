@@ -11,7 +11,7 @@ import numpy
 import scipy.linalg
 import sfX2C_soDKH1 
 
-debug = False #True
+debug = False
 
 # Tsf = 1/2 B.l => 1/2 lpq 
 # Tsd - 1/2 B.sigma => 1/2Spq

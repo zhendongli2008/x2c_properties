@@ -58,3 +58,10 @@ import sfX2C_zeeman
 h10,h11 = sfX2C_zeeman.get_zeeman(myhf,mol,c,org)
 print h10.shape,numpy.linalg.norm(h10) 
 print h11.shape,numpy.linalg.norm(h11)
+
+for i in range(3):
+   print i,numpy.linalg.norm(h10[i]+h10[i].T)
+
+for i in range(3):
+   for j in range(3):
+      print i,numpy.linalg.norm(h11[i,j]-h11[i,j].T)
