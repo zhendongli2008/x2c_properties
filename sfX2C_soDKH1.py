@@ -66,7 +66,7 @@ def get_wso(mol):
       zA  = mol.atom_charge(iatom)
       xyz = mol.atom_coord(iatom)
       mol.set_rinv_orig(xyz)
-      wso = -zA*mol.intor('cint1e_prinvxp_sph', 3) # sign due to integration by part
+      wso += -zA*mol.intor('cint1e_prinvxp_sph', 3) # sign due to integration by part
    return wso
 
 def get_kint(mol):
